@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+      <variable
+          name="settings"
+          type="com.example.medimok.views.fragment.SettingFragment" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/rounded_curve">
+
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_small_txt"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:drawableStart="@drawable/ic_account"
+                android:drawableTint="@color/color_secondary"
+                android:drawablePadding="@dimen/_8sdp"
+                android:layout_gravity="center"
+                android:onClick="@{()->settings.account()}"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/health_report"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:drawableStart="@drawable/ic_report"
+                android:drawableTint="@color/color_secondary"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:onClick="@{()->settings.report()}"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawableTint="@color/color_secondary"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:onClick="@{()->settings.privacy()}"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:drawableStart="@drawable/ic_about"
+                android:drawableTint="@color/color_secondary"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:onClick="@{()->settings.about()}"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:drawableStart="@drawable/ic_exit"
+                android:drawableTint="@color/color_secondary"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:onClick="@{()->settings.logout()}"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

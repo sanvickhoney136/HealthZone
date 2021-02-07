@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+     <variable
+         name="splash"
+         type="com.example.medimok.views.activity.Splash" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_120sdp"
+            app:lottie_fileName="animation_two.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"/>
+
+<!--        <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:loader_animDur="200"-->
+<!--            app:loader_noOfDots="4"-->
+<!--            app:loader_circleRadius="@dimen/_3sdp"-->
+<!--            app:loader_defaultColor="@color/color_primary"-->
+<!--            app:loader_selectedColor="@color/color_primary"-->
+<!--            app:loader_dotsDist="8dp"-->
+<!--            app:loader_expandOnSelect="false"-->
+<!--            app:loader_isSingleDir="false"-->
+<!--            app:loader_selectedRadius="10dp"-->
+<!--            app:loader_showRunningShadow="true"-->
+<!--            app:loader_firstShadowColor="@color/color_grey"-->
+<!--            app:loader_secondShadowColor="@color/color_grey"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginBottom="@dimen/_20sdp"-->
+<!--            android:visibility="gone" />-->
+    </RelativeLayout>
+</layout>

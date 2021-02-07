@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Med Online</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="sign_in">Signin</string>
+    <string name="sign_up">Signup</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile_small">Profile</string>
+    <string name="edit_profile_content">Edit and Update on Your Profile Details</string>
+    <string name="application_name">Med-online</string>
+    <string name="proper_employee_details">Please Fill Proper Details</string>
+    <string name="proper_credentials">Please Fill SignIn-Credentials</string>
+    <string name="welcome_note">Welcome to Med Online</string>
+    <string name="app_detail_one">Medical Health-monitoring services care</string>
+    <string name="app_detail_two">Monitoring Employee Health system</string>
+    <string name="app_detail_three">Private Policies Conditions Apply</string>
+
+    <!--Register details-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="company_name">Company Name</string>
+    <string name="employee_id">Employee Id</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="no_account">New Registration?</string>
+    <string name="loading">Loading</string>
+
+    <!--view pager-->
+    <string name="home">HOME</string>
+    <string name="profile">PROFILE</string>
+    <string name="profile_small_txt">Profile</string>
+    <string name="social">SOCIAL</string>
+    <string name="account">Account</string>
+    <string name="privacy">Privacy &amp; Security</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="health_report">Health Report</string>
+
+    <string name="sample_date">Saturday, January 23rd</string>
+    <string name="sample_time">11:51:29 AM</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="address">Address Line</string>
+    <string name="country">Country</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="track_id">Track Id</string>
+    <string name="sensor_time">Sensor Time</string>
+    <string name="sensor_date">Sensor Date</string>
+    <string name="server_time">Server Time</string>
+    <string name="server_date">Server Date</string>
+</resources>

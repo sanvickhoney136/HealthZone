@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_6sdp"
+                android:elevation="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sample_date"
+                        android:textSize="@dimen/_11sdp"
+                        android:textColor="@color/color_primary"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:padding="@dimen/_6sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Heart Level"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold" />
+
+                        <TextView
+                            android:id="@+id/tvHeart"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="40 / 120"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Sugar"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold" />
+
+                        <TextView
+                            android:id="@+id/tvSugar"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="40 / 120"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/line_shape"
+                        android:orientation="vertical"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:padding="@dimen/_6sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Pressure"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold" />
+
+                        <TextView
+                            android:id="@+id/tvBloodPressure"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="40 / 120"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Colostrol"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold" />
+
+                        <TextView
+                            android:id="@+id/tvColostrol"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="40 / 120"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/line_shape"
+                        android:orientation="vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:padding="@dimen/_6sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Oxygen"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold" />
+
+                        <TextView
+                            android:id="@+id/tvOxygen"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="40 / 120"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Glucose"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold" />
+
+                        <TextView
+                            android:id="@+id/tvGlucose"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="40 / 120"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/color_primary"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+</layout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+      <variable
+          name="model"
+          type="com.example.medimok.views.activity.SensorReportActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_layout" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:autofillHints="@string/sample_time"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/tvRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/color_primary"
+                android:fontFamily="@font/poppinssemibold"
+                android:layout_margin="@dimen/_6sdp"
+                />
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/color_primary">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:stackFromEnd="true"
+                    app:reverseLayout="true"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+                </androidx.recyclerview.widget.RecyclerView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linerNoData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/imgNoRec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/norecord"
+                android:layout_gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sorry !... No Records Found"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/color_primary"
+                android:gravity="center"
+                android:fontFamily="@font/poppinssemibold" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

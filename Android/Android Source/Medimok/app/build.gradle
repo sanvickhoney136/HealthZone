@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    dataBinding { enabled = true }
+    viewBinding { enabled = true }
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.medimok"
+        minSdkVersion 17
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    def lifecycle_version = "2.2.0"
+    def lottieVersion = "3.4.0"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    /*recyclerview view*/
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    /*material design*/
+    implementation "com.google.android.material:material:1.1.0-alpha02"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    /*Glide View*/
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    /*font dimension view*/
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    /*dot loader*/
+    implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
+    /*lottie animation*/
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    /*Retrofit*/
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp:okhttp:2.7.2'
+    /*Http logger*/
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+    /*custom switch*/
+    implementation 'com.github.angads25:toggle:1.1.0'
+    /*google location tracking*/
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    /*event bus*/
+    implementation 'org.greenrobot:eventbus:3.2.0'
+    /*swipe refresh*/
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+}
