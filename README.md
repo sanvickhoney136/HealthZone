@@ -9,7 +9,10 @@ solution description:
 *	In the web application (for multiple users) part view all employee health records based on their health issues. At the end of the day which collects the user’s health information and provides the condition of their health summary for every user. If any critical warning to send the notification via email.
 *	If employees asked about their health condition the doctor can communicate through the chatbot. The chatbot gives the current health status and helps to give the precautions depends on their health condition.
 *	privacy of employee health information can be shared only got hash code. I achieved this scenario by using block code generating and sharing by appropriate users.
-
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/75310734/107235261-85368900-6a4a-11eb-84a5-2163a3429ad8.gif)
+Solution Architecture:
+	1. Overall Architecture: 
+	
+	
+ 2. Technical Architecture:
+![tech](https://user-images.githubusercontent.com/75310734/107235861-21f92680-6a4b-11eb-87b1-84835665a421.PNG)
 
