@@ -1,5 +1,5 @@
  **Usecase:** Sustainability & wellness
-  **Problem statement:** Employee health monitoring system
+  **Problem statement:** Employee health monitoring system with an existing Open API
 
 **Solution Architecture:**
     **1. Overall Architecture:**
