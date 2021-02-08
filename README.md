@@ -1,5 +1,6 @@
-**Usecase:** Sustainability & wellness
- **Problem statement:** Employee health monitoring system
+> **Usecase:** Sustainability & wellness
+>  **Problem statement:** Employee health monitoring system
+
         The problem statement is about a Remote Employee health monitoring system with safer data sharing from the employee and doctor without any intermediate. Then they need a platform to provide their sensitive information feel successful in sharing the data within their health systems and get fast response for their health condition status. So I developed a healthcare mobile application(for a single user) and web application (for multiple users-(employee and doctor)) with the help of existing Open API to solve the most interoperability and employee service issues. Healthcare data transactions and simultaneously secure and trustworthy due to the use of cryptographic principles. The employee can manage and share their health records are shared with secure and immutable audit trails to reduce systematic fraud. This case provides a remote employee health monitoring system, employees have their health records and shared their health records with the doctor. The doctor maintains the overall employees' health records and predicts if any employee's condition is normal or critical, the doctor provides the diagnosed report with a prescription to the employee. after that, the employee must follow the doctor's prescription and stay healthy to focus on their work.	
 
 **solution description:**
